@@ -54,3 +54,15 @@ To avoid physical data capture, synthetic dataset generation options were evalua
   - Raspberry Pi 4 with Coral USB Accelerator: ~15-30 fps.
 - **Dataset Size:** 1,000-2,000 images (250-500 per corner), generated in 6-9 hours.
 
+### Implementation Steps
+1. **Install Blender:**
+   - Download: [https://www.blender.org/download/](https://www.blender.org/download/)
+2. **Build the Scene:**
+   - Create a badminton court (13.4m x 5.18m) with 40mm-wide lines.
+   - Add a shuttlecock model (cone + feathers).
+   - Apply realistic textures (e.g., wooden floor).
+3. **Set Up Four Cameras:**
+   - **Positions:** Corners at (0, 0, 1.5m), (13.4, 0, 1.5m), (0, 5.18, 1.5m), (13.4, 5.18, 1.5m).
+   - **Angles:** 45° downward, facing court center or nearest line.
+   - **FOV:** Cover 2-3m around the line.
+
